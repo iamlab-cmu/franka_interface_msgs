@@ -1,0 +1,8 @@
+# SensorData
+std_msgs/Header header
+bool has_trajectory_generator_sensor_data
+bool has_feedback_controller_sensor_data
+bool has_termination_handler_sensor_data
+SensorData trajectory_generator_sensor_data
+SensorData feedback_controller_sensor_data
+SensorData termination_handler_sensor_data
