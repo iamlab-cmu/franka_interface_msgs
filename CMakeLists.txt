@@ -17,22 +17,20 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
-
+find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/ExecuteSkill.action"
-  "msg/Errors.msg"
-  "msg/FrankaInterfaceStatus.msg"
-  "msg/RobotState.msg"
-  "msg/RunLoopProcessInfoState.msg"
-  "msg/SensorData.msg"
-  "msg/SensorDataGroup.msg"
-  "srv/GetCurrentFrankaInterfaceStatus.srv"
-  "srv/GetCurrentRobotState.srv"
+  action/ExecuteSkill.action
+  msg/Errors.msg
+  msg/FrankaInterfaceStatus.msg
+  msg/RobotState.msg
+  msg/RunLoopProcessInfoState.msg
+  msg/SensorData.msg
+  msg/SensorDataGroup.msg
+  srv/GetCurrentGripperState.srv
+  srv/GetCurrentFrankaInterfaceStatus.srv
+  srv/GetCurrentRobotState.srv
 )
 
 if(BUILD_TESTING)
