@@ -1,2 +1,2 @@
 ---
-JointState gripper_state
+sensor_msgs/JointState gripper_state
