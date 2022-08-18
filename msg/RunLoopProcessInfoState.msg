@@ -16,6 +16,7 @@ int64 new_meta_skill_type
 string new_skill_description
 bool is_running_skill
 bool skill_cancelled
+bool skill_failed
 int64 done_skill_id
 int64 result_skill_id
 float64 time_skill_started_in_robot_time
